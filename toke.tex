@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{mathtools}
 \usepackage{amsfonts}
+\usepackage{eurosym}
 %%\usepackage[toc,page]{appendix}
 \usepackage{amsmath} %matematiikka kirjasto
 \usepackage{graphicx} %kuvien liittämiseen kuten etusivun Aalto-logo
@@ -31,7 +32,7 @@
 \newcommand*{\sijoitus}[2]{\mathop{\Big/}\limits_{\mspace{-19mu}#1}^{\mspace{19mu}#2}} % uusi komento jolla saadaan itgeraaliin suomalainen sijoitus viiva, käytetään \sijoitus{yläraja}{alaraja}, vaatii amsmath kirjaston
 \renewcommand\thesection{\arabic{section}}
 \usepackage{fancyhdr}
- 
+\usepackage{caption}
 %\pagestyle{fancy}
 %\fancyhf{}
 %\rhead{Hekon logo}
@@ -48,7 +49,7 @@
 
 \begin{figure}[htb]
 	\begin{center}
-	\includegraphics[height=4cm]{heko.png}
+		\includegraphics[height=4cm]{heko.png}
 	\end{center}
 	%\caption{Kuvateksti, jossa on liitteen numerointi}
 \end{figure}
@@ -64,69 +65,85 @@ Helsingin Kotkat toteuttaa toiminnassaan Suomen Partiolaisten partio-ohjelmaa. T
 
 \begin{figure}[htb]
 	\begin{center}
-	\includegraphics[height=6cm]{kokous.jpg}
+		\includegraphics[height=7cm]{kokous.jpg}
 	\end{center}
-	\caption{Toiminnansuunnittelua lippukunnan kämpällä.}
+	\caption*{\textbf{Toiminnansuunnittelua lippukunnan kämpällä.}}
 \end{figure}
 
 
 Ryhmät koontuivat omiin tapaamisiinsa viikoittain ja johtajat pitivät omia kokouksiaan tarpeen mukaan, esimerkiksi retkien suunnittelua varten. Kokouksista ja niiden määrästä lista alla:\\
 \begin{center}
-\begin{tabular}{ l l }
-	Vuosikokous & 1 kpl\\
-	Vaalikokous & 1 kpl\\
-	Hallituksen kokous & 9 kpl\\
-	Poikasamoajat & n kpl\\
-	Tyttötarpojat & n kpl\\
-	Tyttöseikkailijat & n kpl\\
-	Poikaseikkailijat & n kpl\\
-	Tyttösudenpennut & n kpl\\
-	Poikasudenpennut & n kpl\\
-			 & \\
-	Yhteensä & x kpl\\
-\end{tabular}
+	\begin{tabular}{ l l }
+		Vuosikokous & 1 kpl\\
+		Vaalikokous & 1 kpl\\
+		Hallituksen kokous & 9 kpl\\
+		Poikasamoajat & n kpl\\
+		Tyttötarpojat & n kpl\\
+		Tyttöseikkailijat & n kpl\\
+		Poikaseikkailijat & n kpl\\
+		Tyttösudenpennut & n kpl\\
+		Poikasudenpennut & n kpl\\
+						      & \\
+		Yhteensä & x kpl\\
+	\end{tabular}
 \end{center}
 Lisäksi vuoden mittaan on pidettu lukuisia muita pienempiä ja epävirallisia kokouksia, joissa on esimerkiksi suunniteltu toimintaa, retkiä tai kämppien kunnostusta.
-\section{Teoria, aineisto, menetelmä}
-\section{Aikataulu kesälle 2017}
-Alla aikataulua viikkotarkkuudella työn etenemisestä:
-\begin{itemize}
-	\item \textbf{Viikko 21:} Esitehtävän tekoa. Työkaluihin tutustumista (lähinnä LaTeX ja BibTeX)
-	\item \textbf{Viikko 22:} Maanantaina ja tiistaina luentopäivät. Mahdollinen palaveri ohjaajan kanssa loppuviikosta.
-	\item \textbf{Viikko 23:} Materiaalin keräämistä ja jäsentelyä. Teoriaosuuden ranka valmiiksi.
-	\item \textbf{Viikko 24:} Teoriaosuuden vedos 1 valmiiksi, palautus perjantaina.
-	\item \textbf{Viikko 25:} Palautteen pohjalta teoriaosuuden työstämistä parempaan kuntoon.
-	\item \textbf{Viikko 26:} Lähdeluettelon viimeistely, kuvien tuottaminen. Case-studyn aloitus.
-	\item \textbf{Viikko 27:} Sunnuntaina toisen vedoksen DL.
-	\item \textbf{Viikko 28:} Pienryhmäkeskustelua toidesta vedoksesta. Tämän pohjalta parannuksia.
-	\item \textbf{Viikko 29:} Maanantaina raportti pienryhmäkeskustelusta palautettu. Case-studyn tekninen toteutus tiedossa. Kolmas vedos palautetaan sunnuntaina.
-	\item \textbf{Viikko 30:} Pienryhmäkeskustelua ja tämän raportointia. Case-studyn tekninen toteutus alkaa.
-	\item \textbf{Viikko 31:} Neljäs vedos palautettava sunnuntaina. Tähän vedokseen jo alustavasti kuvia ja dataa case-studystä.
-	\item \textbf{Viikko 32:} Teoriaosuuden viimeistely. Johtopäätöksiä case-studystä itse työhön.
-	\item \textbf{Viikko 33:} Perjantaina kommentit ohjaahalta, näiden perusteella raivokasta työn parantelua.
-	\item \textbf{Viikko 34:} Sunnuntaina seminaarikalvot valmiina. Näiden työstöä loppuviikosta.
-	\item \textbf{Viikko 35:} Seminaariviikko.
-	\item \textbf{Viikko 36:} Työn viimeistelyä.
-	\item \textbf{Viikko 37:} Työn viimeistelyä, viimeinen DL palauttaa työ on tämän viikon sunnuntai.
+\subsection{Leirit ja retket}
+\subsubsection{Jouluretki}
+\subsubsection{Kevätretki}
+\subsubsection{SuSe-leiri}
+\subsubsection{Ryhmien retket}
+\subsection{Muu toiminta}
+\subsubsection{Kisat}
+\subsubsection{Kurssit ja koulutus}
+\subsubsection{Varainhankinta}
+\subsubsection{Muuta}
+\section{Toimitilat}
+\subsection{Kolo}
+Lippukunnan pääasiallisena toimitilana, eli Kolona toimii Mellunmäki-Seuralta vuokrattu noin 50 neliömetrin kokoinen huone. Tilassa olevaa keittiötä alivuokrataan Hilkka Harjulle, joka käyttää tilaa päivisin.
+\subsection{Varasto}
+Lipukunnan retki- ja leirikalustoa säilytetään Sallatunturintie 1:ssä, jossa lippukunnalla on noin 30 neliömetrin kokoinen varastotila. 
+\subsection{Willa}
+Lippukunnan käytössä on Nuuksiossa yksityisellä luonnonsuojelualueella sijaitseva Willa-niminen kämppä. Kämpälle tehdään ryhmien toimesta retkiä muutaman kerran vuodessa. Kämpästä ei makseta vuokraa.
+\subsection{Kyöpeli}
+Lippukunnan pääasiallisena kämppänä toimii osoitteessa Ruuhijärventie 17 sijaitseva Kyöpeli. Kämppään kuuluu laajahko tontti. Kämppää käytetään lippukunnan omiin retkiin ulkopuolelle vuokrauksen lisäksi. Myös lippukunta maksaa omista retkistään vuokraa, jotta kämpän ylläpitoon saadaan riittävästi varoja.\\
+\\Kämpän suhteen tehdään läheistä yhteistyötä Paakaupunkiseudun partiolaisten kanssa. Tämä näkyy siten, että lippukunnalla on 1/4-osa käyttöoikeus kaikkiin piirin tarjoamiin palveluihin. Näihin kuuluu sauna, vesikaivo ja jätehuolto.\\
+\\Kyöpelillä vietetään joka vuosi talkoot, yleensä Helatorstaina. Tällä toimikaudella talkoissa tehtiin valtavat määrät puutöitä sekä uudet penkit nuotiopaikalle, lisäksi sisätiloissa tehtiin parannustöitä keittiöön.
+\section{Jäsenet}
+\section{Hallitus ja toimihenkilöt}
+\begin{center}
+	\begin{tabular}{ l l }
+		\textbf{Hallitus} & \\
+		Onni Lampi & lippukunnanjohtaja\\
+		Hanna Tompuri & lippukunnanjohtajan apulainen\\
+		Pyry Aaltonen & sihteeri, uudet jäsenet\\
+		Eero Lilja & taloudenhoitaja, jäsenrekisterinhoitaja\\
+		Pekka Holopainen & varasto- ja kolovastaava\\
+		Heidi Ekblom & koulutusvastaava, viestintämestari\\
+		Pauli Saarikoski & ohjelmavastaava\\
+		Aapo Launiainen & kämppävastaava\\
+					      & \\
+		\textbf{Muut toimihenkilöt} & \\
+		Kimmo Huurinainen & kirjanpitäjä\\
+		Ari Söderqvist & toiminnantarkastaja\\
+		Minna Söderqvist & varatoiminnantarkastaja\\
+						& \\
+		\textbf{Ryhmät ja niiden johtajat} & \\
+		Poikasudenpennut & \\ 
+	\end{tabular}
+\end{center}
 
 
+\section{Talous}
+Lippukunta on säilynyt vakavaraisena läpi tilikauden. Lippukunta sai Urlus-säätiöltä 5000\euro{} avustusta Kyöpelin katon uusimiseen, tämä toteutetaan <joskus>. Lippukunta haki ja sai myös 1500\euro{} rahaa leirikalustonsa uusimiseen, tällä hankittiin uusi puolijoukkueteltta. Varoja koitetaan säästää tulevaisuutta varten, esimerkiksi suojaamaan nousevalta toimitilavuokralta.
+\section{Taustayhteisöt}
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[height=7cm]{lettukestit.jpg}
+	\end{center}
+	\caption*{\textbf{Vohvelimyyntiä Mellunmäen Lionsien kevätriehassa.}}
+\end{figure}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\end{itemize}
-\clearpage
-\nocite{*}
+Taustayhteisöinä ovat tuttuun tapaan toimineet Mikaelin seurakunta, Mellunmäen Lions Club ja Partiolippukunta Helsingin Kotkat ry:n Venhempainyhdistys ry. Jokaiseen taustayhteisöön on oltu aktiivisesti yhteydessä ja heidän kanssaan on järjestetty tapahtumia.
 
 \end{document}
