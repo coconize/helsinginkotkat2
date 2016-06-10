@@ -3,10 +3,8 @@
 \usepackage{mathtools}
 \usepackage{amsfonts}
 \usepackage{eurosym}
-%%\usepackage[toc,page]{appendix}
 \usepackage{amsmath} %matematiikka kirjasto
 \usepackage{graphicx} %kuvien liittämiseen kuten etusivun Aalto-logo
-%\usepackage{pgfplots} %kuvaajien piirtämiseen, ota kommentointi pois mikäli haluat käyttää
 \usepackage[finnish]{babel} %suomenkieli
 \addto{\captionsfinnish}{\renewcommand{\bibname}{Lähteet}}
 \usepackage{amsmath} %matematiikka kirjasto
@@ -22,43 +20,42 @@
 
 \usepackage{hyperref}
 \hypersetup{pdfpagemode=UseNone, pdfstartview=FitH, colorlinks=true,urlcolor=red,linkcolor=blue,citecolor=black,pdftitle={Toimintakertomus},pdfauthor={Partiolippukunta Helsingin Kotkat ry}}
-%\usepackage{pgfplots} %kuvaajien piirtämiseen, ota kommentointi pois mikäli haluat käyttää
-
-%\pagestyle{empty} %ei numeroita sivulle, mikäli niitä silti ilmestyy niin käytä komentoa \thispagestyle{empty} näillä sivuilla. Ei meinaa jostain syystä toimia report luokan kanssa
 \setlength{\parindent}{0mm} %ei sisennystä uusiin kappaleisiin
 \setlength{\emergencystretch}{15pt} %tekstin muokkaamiseen eli sallii välien venytyksen riveillä jotta näyttää paremmalta
 \renewcommand{\bibname}{References}
 \newcommand*{\findate}{\the\day.\the\month.\the\year} %uusi komento päivämäärän esittämiseen suomalaisittain
-\newcommand*{\sijoitus}[2]{\mathop{\Big/}\limits_{\mspace{-19mu}#1}^{\mspace{19mu}#2}} % uusi komento jolla saadaan itgeraaliin suomalainen sijoitus viiva, käytetään \sijoitus{yläraja}{alaraja}, vaatii amsmath kirjaston
 \renewcommand\thesection{\arabic{section}}
 \usepackage{fancyhdr}
+\pagestyle{fancy}
+\rfoot{\thepage}
+\lfoot{}
+\cfoot{}
+%\lhead{}
+%\chead{}
+\rhead{Partiolippukunta Helsingin Kotkat}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
 \usepackage{caption}
-%\pagestyle{fancy}
-%\fancyhf{}
-%\rhead{Hekon logo}
-%\lhead{Helsingin Kotkat ry - toimintakertomus 2015-2016}
 \begin{document}
-
-%\begin{center}
-%\includegraphics[width=50mm, scale=0.1]{heko.png}
-%\end{center}
-%\begin{center}
-%	\includegraphics[keepaspectratio=true,height=70mm]{heko.png}
-%\end{center}
-\chapter{Helsingin Kotkat\\Toimintakertomus\\1.9.2015-31.8.2016}
-
-\begin{figure}[htb]
-	\begin{center}
-		\includegraphics[height=4cm]{heko.png}
-	\end{center}
-	%\caption{Kuvateksti, jossa on liitteen numerointi}
-\end{figure}
-
+\begin{titlepage}
+	\centering
+	\includegraphics[width=0.5\textwidth]{heko.png}\par\vspace{1cm}
+	{\scshape\LARGE Partiolippukunta Helsingin Kotkat \par}
+	\vspace{1cm}
+	{\scshape\Large Toimintakertomus\par}
+	\vspace{1.5cm}
+	{\huge\bfseries 1.9.2015-31.8.2016\par}
+	\vspace{2cm}
+	\vfill
+	\vfill
+	{\large Hyväksytty hallituksen kokouksessa 10/2016}
+\end{titlepage}
 
 \section{Yleistä lippukunnasta}
-Helsingin Kotkat toteuttaa toiminnassaan Suomen Partiolaisten partio-ohjelmaa. Toiminta oli kuluneella kaudella aktiivista ja lippukunnan jäsenmäärä on vakaa.\\
-\\Lippukunnassa toimi keväällä 2016 yksi tyttösudenpentulauma, kaksi poikasudenpentulaumaa, yksi tyttöseikkailijajoukkue, yksi poikatarpojajoukkue, yksi tyttötarpojaryhmä sekä yksi poikasamoajaryhmä.\\
-\\Lisäksi lippukunnan johtajatehtävisä toimivat vaeltajat ja aikuiset ovat kokoontuneet toiminnansuunnittelun merkeissä.
+Helsingin Kotkat on vuonna 1934 alunperin poikalippukunnaksi Helsingin keskustaan perustettu lippukunta. Myöhemmin lippukunta yhdistyi paikallisen tyttölippukunnan kanssa sekalippukunnaksi ja muutti Mellunmäkeen, jossa se toimii edelleen. Lippukunnalla on pitkät perinteet erityisesti luonnossa liikkumisessa ja jo jopa eläköityneiden jäsenten aktivoimisessa.\\
+\\Helsingin Kotkat toteuttaa toiminnassaan Suomen Partiolaisten partio-ohjelmaa. Toiminta oli kuluneella kaudella aktiivista ja lippukunnan jäsenmäärä on vakaa. Lippukunta osallistuu aktiivisesti läheisten lippukuntien kanssa järjestettävään yhteistoimintaan ja on kantava voima kaupunginosansa nuorisötyössä.\\
+\\Lippukunnassa toimi keväällä 2016 yksi tyttösudenpentulauma, kaksi poikasudenpentulaumaa, yksi tyttöseikkailijajoukkue, yksi poikatarpojajoukkue, yksi tyttötarpojaryhmä sekä yksi poikasamoajaryhmä. Lisäksi lippukunnan johtajatehtävisä toimivat vaeltajat ja aikuiset ovat kokoontuneet toiminnansuunnittelun merkeissä.
 \newpage
 \section{Toiminta}
 \subsection{Kokoukset}
@@ -67,7 +64,8 @@ Helsingin Kotkat toteuttaa toiminnassaan Suomen Partiolaisten partio-ohjelmaa. T
 	\begin{center}
 		\includegraphics[height=7cm]{kokous.jpg}
 	\end{center}
-	\caption*{\textbf{Toiminnansuunnittelua lippukunnan kämpällä.}}
+	\captionsetup{labelformat=empty}
+	\caption{\textbf{Toiminnansuunnittelua lippukunnan kämpällä.}}
 \end{figure}
 
 
@@ -83,7 +81,7 @@ Ryhmät koontuivat omiin tapaamisiinsa viikoittain ja johtajat pitivät omia kok
 		Tyttötarpojat & 25 kpl\\
 		Tyttöseikkailijat & 25 kpl\\
 		Tyttösudenpennut & 25 kpl\\
-			      & \\
+					 & \\
 		\textbf{Yhteensä} & \textbf{176 kpl}\\
 	\end{tabular}
 \end{center}
@@ -123,12 +121,43 @@ Lipukunnan retki- ja leirikalustoa säilytetään Sallatunturintie 1:ssä, jossa
 \subsection{Willa}
 Lippukunnan käytössä on Nuuksiossa yksityisellä luonnonsuojelualueella sijaitseva Willa-niminen kämppä. Kämpälle tehdään ryhmien toimesta retkiä muutaman kerran vuodessa. Kämpästä ei makseta vuokraa.
 \subsection{Kyöpeli}
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[height=7cm]{kyopeli.jpg}
+	\end{center}
+	\captionsetup{labelformat=empty}
+	\caption{\textbf{Lippukunnan kämppä, Kyöpeli.}}
+\end{figure}
+
 Lippukunnan pääasiallisena kämppänä toimii osoitteessa Ruuhijärventie 17 sijaitseva Kyöpeli. Kämppään kuuluu laajahko tontti. Kämppää käytetään lippukunnan omiin retkiin ulkopuolelle vuokrauksen lisäksi. Myös lippukunta maksaa omista retkistään vuokraa, jotta kämpän ylläpitoon saadaan riittävästi varoja.\\
 \\Kämpän suhteen tehdään läheistä yhteistyötä Paakaupunkiseudun partiolaisten kanssa. Tämä näkyy siten, että lippukunnalla on 1/4-osa käyttöoikeus kaikkiin piirin tarjoamiin palveluihin. Näihin kuuluu sauna, vesikaivo ja jätehuolto.\\
 \\Kyöpelillä vietetään joka vuosi talkoot, yleensä Helatorstaina. Tällä toimikaudella talkoissa tehtiin valtavat määrät puutöitä sekä uudet penkit nuotiopaikalle, lisäksi sisätiloissa tehtiin parannustöitä keittiöön.
 \newpage
 \section{Jäsenet}
-\newpage
+Lippukunnan jäsenmäärä on pysynyt vakaana (tilanne elokuu 2015)\\
+\begin{center}
+\begin{tabular}{ l l l }
+	\textbf{Jäsenryhmä} & \textbf{Ikä} & \textbf{Määrä}\\
+	Sudenpennut & 7-9 & 14\\
+	Seikkailijat & 10-12 & 15\\
+	Tarpojat & 13-15 & 20\\
+	Samoajat & 15-17 & 3\\
+	Vaeltajat & 18-22 & 10\\
+	Aktiiviset aikuiset & 23-29 & 10\\
+	Muut aikuisjäsenet & 30+ & 20\\
+				   & & \\
+	\textbf{Jäsenet yhteensä} & & \textbf{92}
+\end{tabular}
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[height=10cm]{Heko_2016.png}
+	\end{center}
+	%\caption*{\textbf{Jäsentilanne kesäkuussa 2016.}}
+\end{figure}
+
+
+\end{center}
+	\newpage
 \section{Hallitus ja toimihenkilöt}
 \begin{center}
 	\begin{tabular}{ l l }
@@ -141,19 +170,19 @@ Lippukunnan pääasiallisena kämppänä toimii osoitteessa Ruuhijärventie 17 s
 		Heidi Ekblom & koulutusvastaava, viestintämestari\\
 		Pauli Saarikoski & ohjelmavastaava\\
 		Aapo Launiainen & kämppävastaava\\
-					      & \\
+						     & \\
 		\textbf{Muut toimihenkilöt} & \\
 		Kimmo Huurinainen & kirjanpitäjä\\
 		Ari Söderqvist & toiminnantarkastaja\\
 		Minna Söderqvist & varatoiminnantarkastaja\\
-						& \\
+							      & \\
 		\textbf{Ryhmät ja niiden johtajat} & \\
 		Uudet poikasudenpennut & Ikra Sheikh, Jenni Halkola, Tanja Kaappola\\
 		Vanhat Poikasudenpennut & Hanna Tompuri, Heidi Ekblom\\
 		Poikatarpojat & Pauli Saarikosi, Pyry Aaltonen\\
 		Tyttöseikkailijat & Ikra Sheikh, Jenni Halkola, Tanja Kaappola\\
 		Poikasamoajat & Adel Gatoui\\
-		Tyttösudenpennut & Mari Aho(?)\\
+		Tyttösudenpennut & Mari Aho\\
 		Tyttötarpojat & Aino Pirskanen, Elli Kasvi\\
 	\end{tabular}
 \end{center}
@@ -170,7 +199,8 @@ Lippukunta on säilynyt vakavaraisena läpi tilikauden. Lippukunta sai Urlus-sä
 	\begin{center}
 		\includegraphics[height=7cm]{lettukestit.jpg}
 	\end{center}
-	\caption*{\textbf{Vohvelimyyntiä Mellunmäen Lionsien kevätriehassa.}}
+	\captionsetup{labelformat=empty}
+	\caption{\textbf{Vohvelimyyntiä Mellunmäen Lionsien kevätriehassa.}}
 \end{figure}
 
 Taustayhteisöinä ovat tuttuun tapaan toimineet Mikaelin seurakunta, Mellunmäen Lions Club ja Partiolippukunta Helsingin Kotkat ry:n Venhempainyhdistys ry. Jokaiseen taustayhteisöön on oltu aktiivisesti yhteydessä ja heidän kanssaan on järjestetty tapahtumia.
