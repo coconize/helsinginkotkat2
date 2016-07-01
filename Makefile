@@ -19,6 +19,13 @@ $(TEX2).pdf: $(TEX2).tex
 	pdflatex $(TEX2).tex
 	pdflatex $(TEX2).tex
 
+yksipuoleinen: $(TEX1).tex
+	pdflatex $(TEX1).tex
+	pdflatex $(TEX1).tex
+
+kaksipuoleinen: $(TEX2).tex
+	pdflatex $(TEX2).tex
+	pdflatex $(TEX2).tex
 #Makro, joka vahtii tiedostoa ja latoo sen aina uudelleen kun tiedosto tallennetaan tekstieditorista käsin.
 watch1:
 	@while [ 1 ]; do inotifywait $(TEX1).tex; sleep 0.1; make all; done
