@@ -1,23 +1,16 @@
-TEX1=toke
-TEX2=toke2s
+TEX1=etusivu
 #TEX2=joku
 #TEX3=jokutointn
 #jne...
 
 all:
-	make -C osiot
 	make $(TEX1).pdf	#Tähän lisätään kaikki kansiosta löytyvät ladottavat filut
-	make $(TEX2).pdf
 	make clean		#Poistetaan samalla tarpeeton tauhka, lopputuloksena .tex- ja .pdf-filut
 
 #Näitä lisää tarpeen mukaan, jokaiselle filulle oma sääntö
 $(TEX1).pdf: $(TEX1).tex
 	pdflatex $(TEX1).tex
 	pdflatex $(TEX1).tex
-
-$(TEX2).pdf: $(TEX2).tex
-	pdflatex $(TEX2).tex
-	pdflatex $(TEX2).tex
 
 #Makro, joka vahtii tiedostoa ja latoo sen aina uudelleen kun tiedosto tallennetaan tekstieditorista käsin.
 watch1:

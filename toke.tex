@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{mathtools}
 \usepackage{amsfonts}
+\usepackage{pdfpages}
 \usepackage{eurosym}
 \usepackage{amsmath} %matematiikka kirjasto
 \usepackage{graphicx} %kuvien liittämiseen kuten etusivun Aalto-logo
@@ -37,14 +38,21 @@
 \renewcommand{\sectionmark}[1]{\markright{#1}}
 \usepackage{caption}
 \begin{document}
-\input{osiot/etusivu.tex}
+\includepdf{osiot/etusivu.pdf}
+\tableofcontents
+%\input{osiot/etusivu.tex}
+\newpage
 \input{osiot/yleista.tex}
 \input{osiot/toiminta.tex}
+\newpage
 \input{osiot/viestinta.tex}
 \input{osiot/toimitilat.tex}
 \input{osiot/kyopeli.tex}
+\newpage
 \input{osiot/jasenet.tex}
 \input{osiot/hallitus.tex}
+\newpage
 \input{osiot/talous.tex}
+\newpage
 \input{osiot/taustayhteisot.tex}
 \end{document}
