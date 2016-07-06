@@ -1,20 +1,13 @@
-%\documentclass[twoside, 12pt, finnish]{book} %dokumenttiluokka ja sille muutamia määrityksiä
 \documentclass[twoside]{article}
 \usepackage[hcentering,bindingoffset=20mm]{geometry}
 \usepackage{lipsum}
 \usepackage[utf8]{inputenc}
-\usepackage{mathtools}
 \usepackage{amsfonts}
 \usepackage{emptypage}
 \usepackage{pdfpages}
 \usepackage{eurosym}
-\usepackage{amsmath} %matematiikka kirjasto
-\usepackage{graphicx} %kuvien liittämiseen kuten etusivun Aalto-logo
-\usepackage[finnish]{babel} %suomenkieli
-\addto{\captionsfinnish}{\renewcommand{\bibname}{Lähteet}}
-\usepackage{amsmath} %matematiikka kirjasto
-\usepackage{graphicx} %kuvien liittämiseen kuten etusivun Aalto-logo
-\usepackage{cite}
+\usepackage{graphicx}
+\usepackage[finnish]{babel}
 \usepackage{titlesec}
 \titleformat{\chapter}
 {\Large\bfseries} % format
@@ -24,28 +17,21 @@
 
 \usepackage{hyperref}
 \hypersetup{pdfpagemode=UseNone, pdfstartview=FitH, colorlinks=true,urlcolor=red,linkcolor=black,citecolor=black,pdftitle={Toimintakertomus},pdfauthor={Partiolippukunta Helsingin Kotkat ry}}
-\setlength{\parindent}{0mm} %ei sisennystä uusiin kappaleisiin
-\setlength{\emergencystretch}{15pt} %tekstin muokkaamiseen eli sallii välien venytyksen riveillä jotta näyttää paremmalta
-\newcommand*{\findate}{\the\day.\the\month.\the\year} %uusi komento päivämäärän esittämiseen suomalaisittain
+\setlength{\parindent}{0mm}
+\setlength{\emergencystretch}{15pt}
+\newcommand*{\findate}{\the\day.\the\month.\the\year}
 \renewcommand\thesection{\arabic{section}}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \rfoot{}
 \lfoot{}
 \cfoot{\thepage}
-%\lhead{}
-%\chead{}
-%\rhead{Partiolippukunta Helsingin Kotkat}
-%\renewcommand{\headrulewidth}{0.4pt}
-%\renewcommand{\footrulewidth}{0.4pt}
-%\renewcommand{\sectionmark}[1]{\markright{#1}}
 \usepackage{caption}
 \begin{document}
 \includepdf{osiot/etusivu.pdf}
 \cleardoublepage
 \tableofcontents
 \cleardoublepage
-%\input{osiot/etusivu.tex}
 \input{osiot/yleista.tex}
 \input{osiot/toiminta.tex}
 \newpage
