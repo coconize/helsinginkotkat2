@@ -32,11 +32,13 @@
 \renewcommand{\footrulewidth}{0.4pt}
 \renewcommand{\sectionmark}[1]{\markright{#1}}
 \usepackage{caption}
+\pagenumbering{roman}
 \begin{document}
 \includepdf{osiot/etusivu.pdf}
 \tableofcontents
 %\input{osiot/etusivu.tex}
 \newpage
+\pagenumbering{arabic}
 \input{osiot/yleista.tex}
 \input{osiot/toiminta.tex}
 \newpage
