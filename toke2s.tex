@@ -23,16 +23,16 @@
 {\huge}           % before-code
 
 \usepackage{hyperref}
-\hypersetup{pdfpagemode=UseNone, pdfstartview=FitH, colorlinks=true,urlcolor=red,linkcolor=blue,citecolor=black,pdftitle={Toimintakertomus},pdfauthor={Partiolippukunta Helsingin Kotkat ry}}
+\hypersetup{pdfpagemode=UseNone, pdfstartview=FitH, colorlinks=true,urlcolor=red,linkcolor=black,citecolor=black,pdftitle={Toimintakertomus},pdfauthor={Partiolippukunta Helsingin Kotkat ry}}
 \setlength{\parindent}{0mm} %ei sisennystä uusiin kappaleisiin
 \setlength{\emergencystretch}{15pt} %tekstin muokkaamiseen eli sallii välien venytyksen riveillä jotta näyttää paremmalta
 \newcommand*{\findate}{\the\day.\the\month.\the\year} %uusi komento päivämäärän esittämiseen suomalaisittain
 \renewcommand\thesection{\arabic{section}}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\rfoot{\thepage}
+\rfoot{}
 \lfoot{}
-\cfoot{}
+\cfoot{\thepage}
 %\lhead{}
 %\chead{}
 %\rhead{Partiolippukunta Helsingin Kotkat}
@@ -59,4 +59,6 @@
 \input{osiot/talous.tex}
 \newpage
 \input{osiot/taustayhteisot.tex}
+\newpage\null\thispagestyle{empty}\newpage
+\newpage\null\thispagestyle{empty}\newpage
 \end{document}
