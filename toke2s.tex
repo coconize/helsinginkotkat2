@@ -1,4 +1,7 @@
-\documentclass[twoside, 12pt, finnish]{book} %dokumenttiluokka ja sille muutamia määrityksiä
+%\documentclass[twoside, 12pt, finnish]{book} %dokumenttiluokka ja sille muutamia määrityksiä
+\documentclass[twoside]{article}
+\usepackage[hcentering,bindingoffset=20mm]{geometry}
+\usepackage{lipsum}
 \usepackage[utf8]{inputenc}
 \usepackage{mathtools}
 \usepackage{amsfonts}
@@ -23,7 +26,6 @@
 \hypersetup{pdfpagemode=UseNone, pdfstartview=FitH, colorlinks=true,urlcolor=red,linkcolor=blue,citecolor=black,pdftitle={Toimintakertomus},pdfauthor={Partiolippukunta Helsingin Kotkat ry}}
 \setlength{\parindent}{0mm} %ei sisennystä uusiin kappaleisiin
 \setlength{\emergencystretch}{15pt} %tekstin muokkaamiseen eli sallii välien venytyksen riveillä jotta näyttää paremmalta
-\renewcommand{\bibname}{References}
 \newcommand*{\findate}{\the\day.\the\month.\the\year} %uusi komento päivämäärän esittämiseen suomalaisittain
 \renewcommand\thesection{\arabic{section}}
 \usepackage{fancyhdr}
@@ -33,10 +35,10 @@
 \cfoot{}
 %\lhead{}
 %\chead{}
-\rhead{Partiolippukunta Helsingin Kotkat}
-\renewcommand{\headrulewidth}{0.4pt}
-\renewcommand{\footrulewidth}{0.4pt}
-\renewcommand{\sectionmark}[1]{\markright{#1}}
+%\rhead{Partiolippukunta Helsingin Kotkat}
+%\renewcommand{\headrulewidth}{0.4pt}
+%\renewcommand{\footrulewidth}{0.4pt}
+%\renewcommand{\sectionmark}[1]{\markright{#1}}
 \usepackage{caption}
 \begin{document}
 \includepdf{osiot/etusivu.pdf}
