@@ -20,24 +20,14 @@
 %\setlength{\emergencystretch}{15pt}
 \newcommand*{\findate}{\the\day.\the\month.\the\year}
 \renewcommand\thesection{\arabic{section}}
-%\usepackage{fancyhdr}
-%\pagestyle{fancy}
-%\rfoot{\thepage}
-%\lfoot{}
-%\cfoot{}
-%\lhead{}
-%\chead{}
-%\rhead{Partiolippukunta Helsingin Kotkat}
-%\renewcommand{\headrulewidth}{0.4pt}
-%\renewcommand{\footrulewidth}{0.4pt}
-%\renewcommand{\sectionmark}[1]{\markright{#1}}
 \usepackage{caption}
 \pagenumbering{roman}
 \begin{document}
 \includepdf{osiot/etusivu.pdf}
+\setcounter{tocdepth}{1}
 \tableofcontents
-%\input{osiot/etusivu.tex}
 \newpage
+
 \pagenumbering{arabic}
 \input{osiot/yleista.tex}
 \input{osiot/toiminta.tex}
