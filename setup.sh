@@ -15,13 +15,12 @@ echo " * texlive, texlive-latex-recommended, texlive-latex-extra, texlive-lang-e
 echo " * make - Makefilujen käyttäminen on kätevää ja tämä työkalu tarvitaan vain ja ainoastaan siksi"
 echo " * tree - Työkalu hakemistopolun tekemiseen"
 echo " * inotify-tools - Mahdollistaa makron, jonka avulla dokumentteja voidaan latoa automaattisesti"
-echo " * apache2-utils - paketin mukana tulee noin 10 web-serverin hallintaan tarkoitettua työkalua joista htpasswd on erityisen kätevä salasanojen hallinnassa."
 echo ""
 varmistus
 
 clear
 
-sudo apt-get install texlive texlive-latex-recommended texlive-latex-extra texlive-lang-european make tree inotify-tools apache2-utils
+sudo apt-get install texlive texlive-latex-recommended texlive-latex-extra texlive-lang-european make tree inotify-tools
 echo ""
 echo ""
 echo ""
@@ -40,5 +39,5 @@ make
 clear
 
 tree -l
-echo "Dokumentit ladottu. Symboliset linkit .pdf-tiedostoihin löytyvät kansiosta walpuri-public."
+echo "Dokumentit ladottu."
 echo "Muista lukea README.md!!!"
