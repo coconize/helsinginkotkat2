@@ -32,4 +32,7 @@ watch1:
 
 #Poistaa tauhkat
 clean:
-	rm -rf *~ *.log *.out *.aux *.toc *.snm *.nav *.bbl *.blg	
+	rm -rf *~ *.log *.out *.aux *.toc *.snm *.nav *.bbl *.blg
+
+reset:
+	rm *.pdf
